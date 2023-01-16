@@ -483,9 +483,9 @@ input[type="password"] {
     height: 11px;
     background: url(../../book/images/ico_fold_menu_plus.png) 0 0 / contain no-repeat;
 }
-#navbar .cate-box .cate-list ul li.list-item .fold-box-header:hover::after{
+/* #navbar .cate-box .cate-list ul li.list-item .fold-box-header:hover::after{
     background: url(../../book/images/ico_fold_menu_plus_hover.png) 0 0 / contain no-repeat;
-}
+} */
 #navbar .cate-box .cate-list ul li.list-item .btn-fold {
     position: absolute;
     top: 0;
