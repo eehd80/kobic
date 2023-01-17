@@ -349,7 +349,8 @@ input[type="password"] {
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 46px;
+    right: 0;
     /* display: none; */
     width: 1280px;
     height: 0;
@@ -393,9 +394,9 @@ input[type="password"] {
     overflow: hidden auto;
     display: flex;
     justify-content: space-between;
-    width: 87%;
+    width: 92%;
     height: 250px;
-    margin: 0 0 0 50px;
+    margin: 0 auto;
     padding: 20px 0;
 }
 #navbar .cate-box .cate-list .col-area {
@@ -427,6 +428,7 @@ input[type="password"] {
 
 #navbar .cate-box .cate-list ul li.list-item .cate-depth2 {
     display: none;
+    padding-bottom: 10px;
 }
 #navbar .cate-box .cate-list ul li.list-item.on .cate-depth2 {
     display: block;

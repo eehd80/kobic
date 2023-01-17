@@ -1,5 +1,47 @@
 // 230105 추가
 
+// navbar open
+const navbar = document.querySelector('#navbar')
+const navbarBtn = navbar.querySelector('.all-cate')
+const navbarCloseBtn = navbar.querySelector('.cate-close')
+const navbarEl = navbar.querySelector('.cate-box')
+
+navbarBtn.addEventListener('click', event => {
+  event.stopPropagation()
+  if (navbarEl.classList.contains('open')) {
+    hideBasket()
+  } else {
+    showBasket()
+  }
+})
+navbarEl.addEventListener('click', event => {
+  event.stopPropagation()
+})
+
+window.addEventListener('click', hideBasket)
+navbarCloseBtn.addEventListener('click', hideBasket)
+
+function showBasket() {
+    navbarEl.classList.add('open')
+}
+function hideBasket() {
+    navbarEl.classList.remove('open')
+}
+
+const navItemEl = $('#navbar .list-item')
+const navItmBtn = $('#navbar .btn-fold')
+
+navItmBtn.on("click", function () {
+    // e.preventDefault();
+    if ($(this).parents('.list-item').hasClass("on")) {
+        $(this).parents('.list-item').removeClass("on");
+    } else {
+        navItemEl.removeClass("on");
+        $(this).parents('.list-item').addClass("on");
+    }
+});
+
+
 // datePicker
 $('#dpFrom').datepicker({
     format : 'yy-mm-dd',
